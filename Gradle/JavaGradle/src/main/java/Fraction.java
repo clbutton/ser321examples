@@ -44,8 +44,8 @@ public class Fraction {
          Fraction frac = new Fraction();
          if (args.length == 2) {
             try {
-               frac.setNumerator(args[1]);
-               frac.setDenominator(args[0]);
+               frac.setNumerator(Integer.parseInt(args[1]));
+               frac.setDenominator(Integer.parseInt(args[0]));
             } catch (Exception e) {
                System.out.println("Arguments: " + args[0] + ", " + args[1] + " must be integers.");
                System.exit(1);
