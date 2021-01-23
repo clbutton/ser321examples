@@ -57,8 +57,6 @@ task runFrac(type: JavaExec) {
   // Try: using default values in case non or only one parameter is provided
   if (project.hasProperty("denom") && project.hasProperty("num")) {
     args(project.getProperty('demon'), project.getProperty('num'));
-  } else if (project.hasProperty("num") && project.hasProperty("denom")){
-    args(project.getProperty('num'), project.getProperty('denom'));
   }
 }
 
